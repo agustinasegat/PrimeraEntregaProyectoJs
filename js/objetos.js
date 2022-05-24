@@ -14,6 +14,7 @@ class producto{
         return  (+ this.articulo +" - "+ this.item + " - " + this.material +" - "+ this.medida +" - "+ this.color + " - $" + this.precio) };
 }
 
+//Objetos del catálogo
 let cajonera = new producto(1, "Cajonera", "Madera paraíso laqueado con correderas metálicas", "Blanco", "120x47x120cm", 45000);
 let sillon = new producto(2,"Sillón un cuerpo", "Pana antimanchas Estampado Zig Zag", "Naranja/Turquesa ", "75x65x70cm", 28000);
 let silla = new producto(3, "Silla", "Eames con patas de madera", "Blanco ", "82x52x49cm", 8000);

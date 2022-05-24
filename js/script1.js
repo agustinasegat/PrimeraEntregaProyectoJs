@@ -1,7 +1,7 @@
 // Armamos un carrito utilizado una variable llamada "carrito" con un array vacío
 let carrito = []
 
-//Le damos las opciones de agregar productos al carrito, ver los productos agregados y calcular el total de la compra
+//Le damos las opciones de agregar productos al carrito, ver los productos agregados, calcular el total de la compra, eligiendo el método de envío y pagar
 let band = true ;
 while (band) {
 
@@ -43,8 +43,6 @@ while (band) {
 
 //Función para que el usuario elija el producto que va a llevar
 function pedirDatos(){
-
-
 let mensaje = " Catálogo:"
 mensaje +=    "\n1) Cajonera de Madera paraíso laqueado con correderas metálicas $45.000";
 mensaje +=    "\n2) Sillon un cuerpo Pana antidesgarro Estampado Zig Zag $28.000"; 
@@ -110,8 +108,7 @@ function mostrarCarrito(){
     alert(mensaje)}
 }
 
-
-//Elimina los productos del carrito
+//Elimina productos del carrito
     function eliminarProducto(){
     //Usamos la función buscar para buscar los objetos dentro del carrito
         if (buscar()) {
@@ -196,10 +193,10 @@ function mostrarCarrito(){
         }
     }
 
-
+//Pagar
 function pago(){
 
-//Solicitud de datos personales al usuario
+//Solicitud de datos de envío y de pago
 alert("¡Bienvenido a nuestro sistema de pagos!")
 nombre = prompt("Ingresá tu nombre")
 apellido = prompt("Ingresá tu apellido")
@@ -223,15 +220,10 @@ while (!precio || precio <1 || (isNaN (precio))){
 // Tasa de interés por cuota
 const interes = 0.05
 
-//---------------------------------------CUOTAS---------------------------------------//
-
 //Se solicita al usuario que ingrese la cantidad de cuotas deseada
 let cuotas = " "
 function solicitarCuotas(){
     cuotas = parseInt(prompt("Ingresá una cantidad de cuotas entre 1 y 6"));}
-
-
-//--------------------------------CALCULADORA DE INTERESES-----------------------------//
 
 //Mientras no se ingresen las cuotas, el valor ingresado sea menor a 1, superior a 6 o no sea un valor numérico, va a solicitar se reingresen
 while ( !cuotas || cuotas <=0 || cuotas >6 || (isNaN(cuotas)) ){

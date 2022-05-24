@@ -4,7 +4,7 @@
 }
 
 
-/*NAV*/
+/*BARRA NAV*/
 
 .nav-bg{
     background-image: url("../images/retina_wood.png");
@@ -21,9 +21,6 @@
     &:hover{
     color: nth($color, 3)}}
 
-/*--Link activo--*/
-.link-active{
-    color: nth($color, 3)}
 
 @media (min-width: 992px){
 .navbar-expand-lg, .navbar-collapse {
@@ -151,7 +148,7 @@
 background-color: nth($color,3)
 }
 
-//Formulario pago
+/*FORMULARIO DE PAGO*/
 .wrapper {
     background-image: url("../images/back1.jpg");
     background-repeat:no-repeat;
@@ -272,6 +269,8 @@ form {
     margin: 5%;
     color: nth($color, 1);
 }
+
+
 /*FOOTER*/
 .bg-footer{
   background-color: nth($color, 1);
