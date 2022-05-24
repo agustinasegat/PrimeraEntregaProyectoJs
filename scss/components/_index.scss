@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*NAV*/
+
+.nav-bg{
+    background-image: url("../images/retina_wood.png");
+    background-attachment: fixed;
+    }
+
+.nav-link-mod{
+    text-decoration: none;
+    display: block;
+    padding: 3rem 3rem;
+    color: nth($color, 2 );
+    letter-spacing: 0.5rem;
+    font-size: 18px;
+    &:hover{
+    color: nth($color, 3)}}
+
+/*--Link activo--*/
+.link-active{
+    color: nth($color, 3)}
+
+@media (min-width: 992px){
+.navbar-expand-lg, .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    justify-content: flex-end;}
+}
+
+/*--Logo--*/
+.navbar-brand-mod{
+    text-decoration: none;
+    display: block;
+    padding: 3rem;
+    font-weight: 500;
+    color: nth($color, 2 );
+    letter-spacing: 0.5rem;
+    font-size: 28px;
+    text-decoration: none;
+    &:hover{
+        color: nth($color, 3);}}                  
+
+
+/*GALERÍA*/
+.slide1{
+    background-image: url("../images/slide1.jpg");}
+.slide2{
+    background-image: url("../images/slide2.jpg");}
+.slide3{
+    background-image: url("../images/slide3.jpg");}
+.slide4{
+    background-image: url("../images/slide4.jpg");}
+.slide5{
+    background-image: url("../images/slide5.jpg");}
+.slide6{
+    background-image: url("../images/slide6.jpg");}
+
+.slider{
+	display:flex;
+	background:#000;
+	.slide{
+		height:100vh;
+		position:relative;
+		z-index:10;
+		border:solid #fff;
+		border-width:1px;
+		background-size:cover;
+		background-position:center center;
+		opacity:0.25;
+		width:30%;
+		transition:width 0.8s ease, opacity 0.5s ease;
+		&:hover{
+			width:250%;
+			opacity:1;}
+        }
+    }
+
+/*TEXTO*/
+.nosotros{
+    padding: 12%;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 16px;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+    background-image: url("../images/living.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;     
+    }
+    
+/*SECCIÓN MEDIOS DE PAGO Y ENVÍOS*/
+.bg-pagosyenvios{
+    background-color: nth($color, 1);
+    padding: 5%;    
+}
+
+.icono{
+    font-size: 60px;
+    color: nth($color,2);
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.texto-box{
+    font-size: 30px;
+    font-weight: 600;
+    color: nth($color, 2)
+}
+
+/*SECCIÓN PRODUCTOS*/
+
+.bg-madera{
+    background-image: url("../images/retina_wood.png");
+    background-attachment: fixed;
+}
+
+.productos{
+    padding: 10%;
+}
+   
+.card-size{
+    height: 90%;
+    width: 75%;
+    margin: 10%;
+    box-shadow: 30%;
+}
+
+.card-text{
+    text-align: center;  
+}
+
+.articulo{
+    font-size: 18px;
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-color{
+background-color: nth($color,3)
+}
+
+//Formulario pago
+.wrapper {
+    background-image: url("../images/back1.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;}
+
+.container-form {
+    width: 65%;
+    padding: 5% 10%;
+}
+
+form {
+    width: 100%;
+    input {
+        width: 100%;
+        min-height: 25px;
+        border: 0;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        margin-top: 5px;
+        border-radius: 4px;
+    }
+    label {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+.name {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+     div {
+        width: 45%;}
+    }
+
+.address-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 30%;
+    }
+}
+
+.cc-info {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        width: 45%;
+    }
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    button {
+        margin: 5%;
+        height: 30px;
+        width: 40%;
+        border: 0;
+        border-radius: .3rem;
+        letter-spacing: 2px;
+
+    }
+}
+
+
+@media (max-width: 736px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .btns {
+        align-items: center;
+
+        button {
+            width: 50%;
+        }
+    }
+
+
+    .name,
+    .address-info,
+    .cc-info {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+
+        div {
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+        }
+    }
+
+    .street,
+    .cc-num {
+        text-align: center;
+    }
+
+    input {
+        margin: 5px 0;
+        min-height: 30px;
+    }}
+}
+
+.form-head{
+    margin: 5%;
+    color: nth($color, 1);
+}
+/*FOOTER*/
+.bg-footer{
+  background-color: nth($color, 1);
+  color: nth($color, 2 );
+  font-size: 16px}
+  
+.text-link{
+  text-decoration: none;
+  color: nth($color, 2 );
+  &:hover{
+    color: rgb(186, 202, 200)}}
+
+.footer-title{
+  font-size: 16px;
+  font-weight:300;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.1rem;}
+
+.iframe-map{
+  width: 80%;
+  height: 100%;} 
+
+.form-nl{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;}
+  
+.form-control{
+    max-width: 200px;}
+
+.btn-color{
+    background-color: ($color,3);
+    color: white;
+}
+
+.copy{
+    text-align: center;
+    font-size: 12px}
+
+
+
